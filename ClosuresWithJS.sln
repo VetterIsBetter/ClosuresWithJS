@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClosuresWithJS", "ClosuresWithJS\ClosuresWithJS.csproj", "{59CDBAAC-12A0-4E52-AAEA-DEE9BF63CEA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59CDBAAC-12A0-4E52-AAEA-DEE9BF63CEA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CDBAAC-12A0-4E52-AAEA-DEE9BF63CEA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CDBAAC-12A0-4E52-AAEA-DEE9BF63CEA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CDBAAC-12A0-4E52-AAEA-DEE9BF63CEA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D94141D1-50F1-43AA-B692-F7583A19DAAB}
+	EndGlobalSection
+EndGlobal

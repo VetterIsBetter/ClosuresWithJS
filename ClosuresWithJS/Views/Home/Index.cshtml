@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4"><i>Closures with JavaScript</i></h1>
+    <p>
+        A closure allows a function to access and manipulate variables that are external to that function. Closures allow a function to access all the variables, as well as other functions, that are in scope when the function itself is defined.
+        -(Resig et al. 1)
+    </p>
+
+</div>
+
+<button id="toggleClosureBordersButton" class="button">Closure Borders</button>
+
+
+<div id="inner1Closure" class="text-center">
+
+    <div id="outerClosure" class="text-center">
+
+        <div id="globalClosure" class="text-center">
+            <button id="globalButton" class="button">Global</button>
+            <br />
+            <div id="results"></div>
+        </div>
+
+        <div id="outerFunction" class="text-center">
+            <button id="outerFunctionButton" class="button">outerFunction()</button>
+            <br />
+            <div id="outerFunctionResults"></div>
+        </div>
+    </div>
+
+    <div id="insideInner1Closure" class="text-center">
+        <div id="innerFunction1" class="text-center">
+            <button id="innerFunction1Button" class="button">innerFunction1()</button>
+            <br />
+            <div id="innerFunction1Results"></div>
+
+            <div id="insideInnerFunction1" class="text-center">
+                <button id="insideInnerFunction1Button" class="button">insideInnerFunction1()</button>
+                <br />
+                <div id="insideInnerFunction1Results"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="innerFunction2" class="text-center">
+        <button id="innerFunction2Button" class="button">innerFunction2()</button>
+        <br />
+        <div id="innerFunction2Results"></div>
+    </div>
+</div>
+
+
+
+<style>
+    .button {
+        border: 0;
+        border-radius: 5px;
+        background: #4676D7;
+        color: #fff;
+        padding: 8px 16px;
+        font-size: 16px;
+        margin: 10px;
+    }
+    
+    .button:hover {
+        background: #1d49aa;
+    }
+    
+    .button:focus {
+        outline: none;
+        box-shadow: 0 0 0 4px #cbd6ee;
+    }
+
+    #globalClosure {
+        border: 3px dashed black;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #outerClosure {
+        border: 3px dashed black;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #inner1Closure {
+        border: 3px dashed black;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #inner2Closure {
+        border: 3px dashed orange;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #insideInner1Closure {
+        border: 3px solid black;
+        border-radius: 25px;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    #closureList {
+        display: inline-block;
+        max-width: 30%;
+        border: 3px solid black;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 0px;
+    }
+
+    #results li.pass, #outerFunctionResults li.pass, #innerFunction1Results li.pass, #innerFunction2Results li.pass, #insideInnerFunction1Results li.pass {
+        display: inline-block;
+        color: green;
+        border: 2px solid green;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #results li.fail, #outerFunctionResults li.fail, #innerFunction1Results li.fail, #innerFunction2Results li.fail, #insideInnerFunction1Results li.fail {
+        display: inline-block;
+        color: red;
+        text-decoration: line-through;
+        border: 2px solid red;
+        border-radius: 25px;
+        margin: 10px;
+        padding: 10px;
+    }
+</style>
